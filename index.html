@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/CODE.png">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JOAQUIN</a>
+            </div>
+            <nav id="nav">
+                <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-chart-bar"></i>   
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/ME.jpeg" alt="">
+            </div>
+            <h1>Joaquin Iglesias</h1>
+            <h2>Developer Front-End</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/joaquin.iglesias.9" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/joaquiniglesias18/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/joaquiniglesias18/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="Discordapp.com/users/856349104020127775" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+584126212246" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Joaquin Iglesias.</span> Soy un Developer Front-End con mas de 2 años de experiencia realizando proyectos  de sitios web. Me especializo en utilizar tecnologías como HTML5, CSS, GitHub Y JAVASCRIPT(con experiencia en REACT). Mi enfoque se centra en la entrega continua y la mejora del rendimiento, asegurando una experiencia de usuario excepcional. Además, disfruto colaborar en equipos multidisciplinarios donde puedo aportar soluciones innovadoras y creativas a desafíos técnicos.</p>
+            
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            18/04/1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +58 4126212246
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            joaquiniglesias184@gmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/Joaquin184" target="_blank">https://github.com/Joaquin184</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Yaracuy, Venezuela
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Developer Front-End
+                        </li>
+                    </ul>
+                </div>
+
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>EJERCICIOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS Y SERIES</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LEER</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <button>
+                    <a href="CVJaoquin.pdf" download="CVJoaquin">
+                Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"> </span>
+            </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+              <!-- Habilidades Técnicas -->  
+              <div class="col">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>React</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>TypeScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="skill">
+                    <span>Phyton</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>40%</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="skill">
+                    <span>GitHub</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+              <!-- Habilidades Profesionales -->
+              <div class="col">
+                <h3>Habilidades Profesionales</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en Equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Dedicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Responsabilidad</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                        <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido section">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educaión</h3>
+                    <div class="item izq">
+                        <h4>Primaria y Secundaria</h4>
+                        <span class="casa">U.E Colegio Los Angeles</span>
+                        <span class="fecha">1999 - 2008</span>
+                        <p>Estudios de Prescolar a 2do año</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secundaria y Tercera</h4>
+                        <span class="casa">U.E Aristides Bastidas "ARBA"</span>
+                        <span class="fecha">2009 - 2012</span>
+                        <p>Estudios de 3er año a 5to año</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Electrónica</h4>
+                        <span class="casa">Universidad Nacional Experimental Politécnica "Antonio José de Sucre"</span>
+                        <span class="fecha">2015 - 2019</span>
+                        <p>TSU Electrónica</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Atención al Cliente</h4>
+                        <span class="casa">CYBER:"El Gran Kami"</span>
+                        <span class="fecha">2009 - 2011</span>
+                        <p>2 Años y 4 Meses</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+    
+    <div class="item der">
+        <h4>Atención al Cliente</h4>
+        <span class="casa">CYBER: LP Ramirez</span>
+        <span class="fecha">2014 - 2016</span>
+        <p>2 Año</p>
+        <div class="conectord">
+            <div class="circulod"></div>
+        </div>
+    </div>
+
+    <div class="item der">
+        <h4>Transmisión y Datos</h4>
+        <span class="casa"> Compañía Anónima Nacional Teléfonos de Venezuela CANTV</span>
+        <span class="fecha">2018 - 2019</span>
+        <p>Pasantias 6 Meses </p>
+        <div class="conectord">
+            <div class="circulod"></div>
+             </div>
+         </div>
+     </div>
+    </div>
+</div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <a href="https://joaquin184.github.io/MemoriaPokemon/" target="_blank">
+                <div class="proyecto">
+                    <img src="img/P1.jpeg" alt="">
+                <div class="overlay">
+                <h3>Memoria Pokemon</h3>
+                <p>Proyecto</p>
+                </div>
+             </div>
+            </a>
+            <a href="https://joaquin184.github.io/FormularioNBA/" target="_blank">
+             <div class="proyecto">
+               <img src="img/P2.jpeg" alt="">
+                <div class="overlay">
+                <h3>Formulario NBA</h3>
+                <p>Proyecto</p>
+                </div>
+             </div> 
+            </a>
+            <a href="https://joaquin184.github.io/Glamourstore/" target="_blank">
+             <div class="proyecto">
+                <img src="img/P3.jpeg" alt="">
+                <div class="overlay">
+                <h3>GlamourStore</h3>
+                <p>Proyecto</p>
+                </div>
+             </div> 
+            </a>
+            <a href="https://joaquin184.github.io/Calculadoraweb/" target="_blank">
+             <div class="proyecto">
+                <img src="img/P4.jpeg" alt="">
+                <div class="overlay">
+                <h3>Calculadora Web</h3>
+                <p>Proyecto</p>
+                </div>
+             </div> 
+            </a>
+            <a href="https://reloj-25-plus-5.netlify.app" target="_blank">
+                <div class="proyecto">
+                   <img src="img/P5.jpeg" alt="">
+                   <div class="overlay">
+                   <h3>Reloj 25+5</h3>
+                   <p>Proyecto</p>
+                   </div>
+                </div> 
+               </a>
+               <a href="https://lively-faun-bf6947.netlify.app" target="_blank">
+                <div class="proyecto">
+                   <img src="img/P6.jpeg" alt="">
+                   <div class="overlay">
+                   <h3>Caja de Ritmos</h3>
+                   <p>Proyecto</p>
+                   </div>
+                </div> 
+               </a>
+            </div>   
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="conetenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+        <!-- Formulario -->
+                <div class="col">
+               <input type="text" placeholder="Tú Nombre">
+               <input type="text" placeholder="Número Telefónico">
+               <input type="text" placeholder="Direción de Correo">
+               <input type="text" placeholder="Tema">
+               <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+        <!-- Mapa -->
+            <div class="col">
+            <img src="img/ubicación.jpeg" alt=""> 
+            <div class="info">
+                <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Venezuela, Yaracuy - San Felipe
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    Llamanos: +58 4126212246
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: joaquiniglesias184@gmail.com
+                </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/joaquin.iglesias.9" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/joaquiniglesias18/" target="_blank"><i class="fa-brands fa-square-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/joaquiniglesias18/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="Discordapp.com/users/856349104020127775" target="_blank"><i class="fa-brands fa-discord"></i>
+            <a href="https://api.whatsapp.com/send?phone=+584126212246" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </footer>
+    <!--Typed js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed-js@0.2.3/core/index.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
